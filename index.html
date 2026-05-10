@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#7fc879" />
+    <title>Localgotchi</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/localgotchi-egg.svg" />
+    <link rel="apple-touch-icon" href="assets/icons/localgotchi-egg.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="src/config.js" defer></script>
+    <script src="assets/sprites/localgotchi-assets.js" defer></script>
+    <script src="src/utils.js" defer></script>
+    <script src="src/storage.js" defer></script>
+    <script src="src/simulation.js" defer></script>
+    <script src="src/renderer.js" defer></script>
+    <script src="src/ui.js" defer></script>
+    <script src="src/app.js" defer></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="app" aria-label="Localgotchi">
+      <canvas id="scene" class="scene-canvas" width="480" height="270" aria-label="Decor du dyno"></canvas>
+
+      <div class="ui-layer">
+        <header class="hud-top">
+          <div class="brand-chip">
+            <img src="assets/icons/localgotchi-egg.svg" width="40" height="40" alt="" />
+            <div>
+              <h1>Localgotchi</h1>
+              <p id="sceneHint">Clique le dyno pour le caresser.</p>
+            </div>
+          </div>
+          <button class="install-button" id="installButton" type="button" hidden>Installer</button>
+        </header>
+
+        <section class="hud-panel" aria-label="Etat du dyno">
+          <div class="stage-badge" id="stageLabel">Oeuf</div>
+          <div class="meta-strip" aria-label="Etat de la partie">
+            <span><b>Age</b> <strong id="ageLabel">0 min</strong></span>
+            <span><b>Save</b> <strong id="saveLabel">-</strong></span>
+          </div>
+          <div class="stats" id="stats"></div>
+        </section>
+
+        <div class="bottom-ui">
+          <div class="minigame-status" id="minigameStatus" hidden></div>
+          <div class="actions" aria-label="Actions">
+            <button class="action-button hatch-button" type="button" data-action="hatch">
+              <span class="action-icon icon-egg"></span><span class="action-label">Eclore</span>
+            </button>
+            <button class="action-button feed-button" type="button" data-action="feed">
+              <span class="action-icon icon-food"></span><span class="action-label">Manger</span>
+            </button>
+            <button class="action-button drink-button" type="button" data-action="drink">
+              <span class="action-icon icon-water"></span><span class="action-label">Boire</span>
+            </button>
+            <button class="action-button clean-button" type="button" data-action="clean">
+              <span class="action-icon icon-clean"></span><span class="action-label">Laver</span>
+            </button>
+            <button class="action-button play-button" type="button" data-action="play">
+              <span class="action-icon icon-ball"></span><span class="action-label">Jouer</span>
+            </button>
+            <button class="action-button pet-button" type="button" data-action="pet">
+              <span class="action-icon icon-heart"></span><span class="action-label">Caliner</span>
+            </button>
+            <button class="action-button sleep-button" type="button" data-action="sleep">
+              <span class="action-icon icon-door"></span><span class="action-label">Dormir</span>
+            </button>
+            <button class="action-button place-button" type="button" data-action="place">
+              <span class="action-icon icon-cabin"></span><span class="action-label">Cabane</span>
+            </button>
+            <button class="action-button minigame-button" type="button" data-action="minigame">
+              <span class="action-icon icon-game"></span><span class="action-label">Mini-jeu</span>
+            </button>
+            <button class="action-button new-button" type="button" data-action="new">
+              <span class="action-icon icon-new"></span><span class="action-label">Reset</span>
+            </button>
+          </div>
+          <ol class="log" id="log" aria-label="Journal"></ol>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

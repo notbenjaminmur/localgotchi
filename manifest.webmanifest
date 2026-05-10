@@ -1,0 +1,19 @@
+{
+  "name": "Localgotchi",
+  "short_name": "Localgotchi",
+  "description": "Un Tamagotchi local en pixel art, sans backend ni login.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f4efe4",
+  "theme_color": "#7fc879",
+  "icons": [
+    {
+      "src": "assets/icons/localgotchi-egg.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Localgotchi egg logo">
+  <rect width="128" height="128" fill="#f4efe4"/>
+  <g shape-rendering="crispEdges">
+    <rect x="48" y="8" width="32" height="8" fill="#171717"/>
+    <rect x="32" y="16" width="16" height="8" fill="#171717"/>
+    <rect x="80" y="16" width="16" height="8" fill="#171717"/>
+    <rect x="24" y="24" width="8" height="16" fill="#171717"/>
+    <rect x="96" y="24" width="8" height="16" fill="#171717"/>
+    <rect x="16" y="40" width="8" height="40" fill="#171717"/>
+    <rect x="104" y="40" width="8" height="40" fill="#171717"/>
+    <rect x="24" y="80" width="8" height="16" fill="#171717"/>
+    <rect x="96" y="80" width="8" height="16" fill="#171717"/>
+    <rect x="32" y="96" width="16" height="8" fill="#171717"/>
+    <rect x="80" y="96" width="16" height="8" fill="#171717"/>
+    <rect x="48" y="104" width="32" height="8" fill="#171717"/>
+
+    <rect x="48" y="16" width="32" height="8" fill="#fff8df"/>
+    <rect x="32" y="24" width="64" height="16" fill="#fff8df"/>
+    <rect x="24" y="40" width="80" height="40" fill="#fff8df"/>
+    <rect x="32" y="80" width="64" height="16" fill="#fff8df"/>
+    <rect x="48" y="96" width="32" height="8" fill="#fff8df"/>
+
+    <rect x="80" y="32" width="8" height="32" fill="#f6e4b8"/>
+    <rect x="88" y="48" width="8" height="32" fill="#f6e4b8"/>
+    <rect x="40" y="56" width="16" height="16" fill="#ef8a87"/>
+    <rect x="64" y="72" width="16" height="16" fill="#7fc879"/>
+    <rect x="56" y="32" width="16" height="8" fill="#7bb8df"/>
+  </g>
+</svg>
