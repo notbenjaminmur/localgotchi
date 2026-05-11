@@ -101,12 +101,12 @@
   function decayNeeds(game, hours) {
     const poopPenalty = game.poopCount * 0.75;
     if (game.sleeping) {
-      changeStat(game, "energy", 34 * hours);
-      changeStat(game, "hunger", -2.8 * hours);
-      changeStat(game, "thirst", -3.7 * hours);
-      changeStat(game, "happiness", -0.7 * hours);
+      changeStat(game, "energy", 55 * hours);
+      changeStat(game, "hunger", -2.1 * hours);
+      changeStat(game, "thirst", -2.8 * hours);
+      changeStat(game, "happiness", -0.45 * hours);
     } else {
-      changeStat(game, "energy", -1.55 * hours);
+      changeStat(game, "energy", -0.65 * hours);
       changeStat(game, "hunger", -5.1 * hours);
       changeStat(game, "thirst", -6.2 * hours);
       changeStat(game, "happiness", -(1.3 + poopPenalty) * hours);

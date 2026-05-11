@@ -9,8 +9,8 @@
     hourMs: 60 * 60 * 1000,
     dayMs: 24 * 60 * 60 * 1000,
     maxCatchupMs: 72 * 60 * 60 * 1000,
-    teenAgeSeconds: 30 * 60,
-    adultAgeSeconds: 4 * 60 * 60,
+    teenAgeSeconds: 3 * 24 * 60 * 60,
+    adultAgeSeconds: 10 * 24 * 60 * 60,
     worldWidth: 480,
     worldHeight: 270
   };
